@@ -1,0 +1,202 @@
+
+@media (max-width: 768px) {
+
+  .mobile-top-container {
+  display: flex;
+  z-index: 999;
+  justify-content: center;
+  position: fixed;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  }
+
+  .mobile-top-bar {
+    background: #0a0a18;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 8px 10px;
+  }
+
+  .mobile-logo {
+    display: flex;
+    background-color: #06050a;
+    align-items: center;
+    gap: 6px;
+    padding-left: 6px;
+  }
+
+  .mobile-logo img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mobile-logo span {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+
+  .mobile-icons {
+    display: flex;
+    right: 30px;
+    padding-left: 22px;
+    background-color: transparent;
+    max-width: 100px;
+    min-width: 100px;
+    align-items: center;
+  }
+
+  .circle-btn {
+    background: #07073c;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    --webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    padding: 3px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+ .circle-btn.active {
+  background-color: #2d2d63; 
+}
+ 
+  .mobile-icons svg {
+    background-color: transparent;
+    fill: white;
+    min-width: 20px;
+    border-radius: 50%;
+  }
+
+  .canto-um {
+  position: fixed;
+  background-color: none;
+  width: 27px;
+  top: 0;
+  left: -8px;
+  z-index: 999;
+  transform: scaleX(-1);
+  fill:  black;
+}
+
+
+  .bordinha {
+    position: fixed;
+    width: 10px;
+    min-width:10px;
+    top: 8px;
+    z-index: 999;
+    right: 19px;
+    background-color: transparent;
+    fill: #0000ff;
+    transition: all .3s;
+  }
+
+  .canto-dois {
+  background-color: transparent;
+  width: 20px;
+  right: 1px;
+  top:0;
+  max-width: 60px;
+  height: 20px;
+  position: fixed;
+  }
+
+  .whatsapp-btn-2 {
+    background-color:#0000ff;
+    border-radius: 10px 0 5px; 
+    margin: 0 0 0 10px;
+    padding: 10px 12px 11px 12px;
+    display: flex;
+    align-items: center;
+    width: 68%;
+    margin-left: -2px;
+    justify-content: center;
+   
+  }
+
+  .whatsapp-btn-2 img {
+    width: 18px;
+    height: 18px;
+  }
+
+.mobile-icons, .whatsapp-btn-2 {
+  gap: 10px;
+}
+
+
+  .mobile-menu {
+    background-color: #ffffff40;
+    position: fixed;
+    border: 1px solid #ffffff40;
+    opacity: 1;
+    transition: all .3s;
+    right: 35px;
+    pointer-events: all;
+    top: 70px;
+    transform: translate(0);
+    width: 230px;
+    min-width: 230px;
+    visibility: visible;
+    --webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 14px;
+    display: none;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: white;
+    z-index: 999;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .mobile-menu a {
+    text-decoration: none;
+    text-align: left;
+    background-color: transparent;
+    font-family: var(--regular);
+    font-size: 14px;
+    color: var(--cor-escuro-6);
+    
+  }
+
+  .submenu {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .submenu span {
+    font-weight: bold;
+    
+    cursor: pointer;
+  }
+
+  .submenu-links {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+  }
+
+  .submenu.active .submenu-links {
+    display: flex;
+  }
+
+
+
+}

@@ -1,0 +1,73 @@
+
+.img-corte-01 {
+  width: 100%;
+  max-height: 60px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  
+}
+
+.img-corte-01 img {
+  background-color: transparent;
+  width: 100%;
+  
+  max-height: 60px;
+ 
+}
+
+
+  .insta-section {
+    background: #00007c;
+    color: #ffffff;
+    padding: 2rem 1.5rem;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .insta-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .insta-title span {
+    color: #d0d0ff;
+    font-weight: 700;
+  }
+
+  .insta-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #e0e0ff;
+  }
+
+  .insta-text strong {
+    color: #ffffff;
+  }
+
+  .insta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 80%;
+    background: #4b4bff;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  }
+
+ 
+  .insta-button img {
+    width: 20px;
+    height: 20px;
+  }

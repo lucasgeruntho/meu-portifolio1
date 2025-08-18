@@ -1,0 +1,27 @@
+* { 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background:none;
+ box-sizing: border-box; 
+}
+
+body {
+    width: 100%;
+    margin: 0; 
+    height: 0;
+    padding: 0;
+}
+
+
+/* ocultar e aparecer */
+.background-topo, .mobile-top-container, .primary-text-01, .btns-primary, .circulo, .ocultar-desktop {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .background-topo, .btns-primary, .ocultar-desktop, .img-corte-01 {
+    display: block;
+  }
+}
+/* fechamento*/

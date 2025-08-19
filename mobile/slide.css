@@ -1,0 +1,27 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  background: #0b0f2a;
+  padding: 10px 0;
+}
+.slider-track {
+  display: flex;
+  gap: 28px;
+  white-space: nowrap;
+  will-change: transform;
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  border-radius: 12px;
+  font-family: sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.item img,
+.item svg {
+  width: 22px;
+  height: 22px;
+}

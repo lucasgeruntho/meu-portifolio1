@@ -1,0 +1,101 @@
+@media (max-width:768px){
+    /* Container principal */
+.landing-info {
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to bottom right, #060613, #0c0f1f);
+  color: #fff;
+  padding: 24px;
+  text-align: center;
+}
+
+/* Título */
+.landing-info h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  
+}
+
+.landing-info h2 .highlight {
+  color: #3b82f6; /* azul */
+}
+
+/* Subtítulo */
+.landing-info p.sub {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 24px;
+  
+}
+
+/* Bloco de item */
+.landing-feature {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+.landing-feature h3 {
+  font-size: 1.1rem;
+  color: #3b82f6;
+  margin-bottom: 6px;
+  display: inline-block;
+
+  text-align: center;
+}
+
+.landing-feature p {
+  font-size: 0.95rem;
+  color: #aaa;
+  text-align: center;
+}
+}
+
+
+@media (max-width:768px){
+  
+.strategy-box {
+  max-width: 100%;
+
+  background: linear-gradient(to bottom right, #060613, #0c0f1f);
+ 
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Título principal */
+.strategy-box h2 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  padding: 10px ;
+  font-weight: 700;
+}
+
+.strategy-box h2 .highlight {
+  color: #3b82f6; /* azul */
+}
+
+/* Subtítulo destaque */
+.strategy-box h3 {
+  font-size: 1rem;
+ 
+  color: #b0c4ff;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+/* Texto normal */
+.strategy-box p {
+  font-size: 0.95rem;
+  color: #ccc;
+ 
+  line-height: 1.5;
+}
+
+}

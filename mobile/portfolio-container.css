@@ -1,0 +1,37 @@
+@media (max-width:768px) {
+.portfolio-container {
+  max-width: 800px;        
+  margin: 0 auto;          
+  padding: 40px 20px;      
+  text-align: center;     
+  background: linear-gradient(135deg, #0b0f29, #0f1d3a); /* gradiente de fundo */
+  color: #fff;
+
+}
+
+.portfolio-button {
+  background: transparent;
+  border: 1px solid #3a6ff7;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #6ea6ff; /* tom azul */
+  font-weight: bold;
+}
+
+.portfolio-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.portfolio-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+}

@@ -1,3 +1,4 @@
+@media (max-width:768px) {
 .porque-me-contratar {
   padding: 2rem 1rem;
   background: #000; 
@@ -67,4 +68,6 @@
   text-decoration: none;
   font-weight: 500;
   width: fit-content;
+}
+
 }

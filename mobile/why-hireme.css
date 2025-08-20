@@ -1,5 +1,5 @@
 @media (max-width:768px) {
-.porque-me-contratar {
+    .porque-me-contratar {
   padding: 2rem 1rem;
   background: #000; 
   color: #fff;
@@ -31,18 +31,57 @@
 }
 
 .card {
+  position: relative;       
+  overflow: hidden;         
   flex: 0 0 80%;
-  background: linear-gradient(.07383128568086761deg, rgba(0, 53, 255, .11) 0, rgba(97, 97, 97, .09) 100%);
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 0 15px rgba(0, 0, 50, 0.3);
   scroll-snap-align: start;
+  background: transparent;  /* tira o fundo fixo */
+  
 }
+
+/* garante que o conteúdo do card fique acima */
+.card * {
+  position: relative;
+  z-index: 2;
+}
+
+/* waves animadas no fundo */
+.wave {
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  opacity: 0.5;
+  left: -100%;
+  top: -100%;
+  background: linear-gradient(744deg, #56237b, #341fbc 60%, #13828a);
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+  z-index: 1;
+}
+
+.wave:nth-child(2) {
+  top: -50%;
+  animation-duration: 60s;
+}
+
+.wave:nth-child(3) {
+  top: 0;
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 .card .icon {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
-  color: #3b82f6;
+  color: #3867b2;
 }
 
 .card h3 {
@@ -70,4 +109,6 @@
   width: fit-content;
 }
 
+
 }
+

@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // fechamento do desktop
+
+
+
+

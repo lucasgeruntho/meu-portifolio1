@@ -25,5 +25,13 @@ body {
   .img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container, .slider, .insta-container, .incg-wrap, .mobile-menu {
     display: block;
   }
+
+@media (max-width:768px){
+  .custom-header, .desktop-svgs {
+    display: none;
+  }
+}
+
 }
 /* fechamento*/
+

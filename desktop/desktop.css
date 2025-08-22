@@ -16,13 +16,13 @@ body {
 
 /* ocultar e aparecer */
 .background-topo, .mobile-top-container, .primary-text-01, .btns-primary, .circulo, .ocultar-desktop, .img-corte-01, .insta-title, 
-.insta-text, .img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container, .slider{
+.img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container, .slider, .insta-container, .incg-wrap, .mobile-menu {
   display: none;
 }
 
 @media (max-width:768px) {
-  .background-topo, .btns-primary, .ocultar-desktop, .img-corte-01, .img-corte-01, .insta-title, .insta-text,
-  .img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container, .slider{
+  .background-topo, .btns-primary, .ocultar-desktop, .img-corte-01, .insta-title, .insta-text,
+  .img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container, .slider, .insta-container, .incg-wrap, .mobile-menu {
     display: block;
   }
 }

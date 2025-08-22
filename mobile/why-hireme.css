@@ -95,20 +95,83 @@
   opacity: 0.9;
 }
 
-/* Botão de orçamento */
-.btn-whatsapp {
-  display: block;
-  margin: 2rem auto 0;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(90deg, #3b82f6, #2563eb);
-  color: #fff;
-  text-align: center;
-  border-radius: 9999px;
+
+
+
+}
+
+@media (max-width:768px) {
+  
+ .btn-whatsapp-2 a {
   text-decoration: none;
+ }
+
+ .btn-whatsapp-2 {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  
+  position: relative;
+   padding: 30px 40px;
+   margin-bottom: -20px;
+  
+ }
+
+.cssbuttons-io-button {
+   background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  width: 100%;
+ padding-left: 1.1em;
+  font-size: 17px;
   font-weight: 500;
-  width: fit-content;
+  border-radius: 0.9em;
+  border: none;
+  
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon-isoled {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon-isoled {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon-isoled svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon-isoled svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon-isoled {
+  transform: scale(0.95);
 }
 
 
 }
-

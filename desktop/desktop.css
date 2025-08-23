@@ -27,7 +27,7 @@ body {
   }
 
 @media (max-width:768px){
-  .custom-header, .desktop-svgs {
+  .custom-header, .desktop-svgs, .sombra {
     display: none;
   }
 }

@@ -1,0 +1,74 @@
+.botao-contratar-container-desktop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.botao-contratar-desk {
+ z-index: 1;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to bottom, #3c3f94, #2a2d75);
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2) inset;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botao-contratar-desk:hover {
+  background: linear-gradient(to bottom, #4a4dc0, #343892);
+  transform: scale(1.03);
+}
+
+
+
+.btns-primary-desktop {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 79px;
+  padding: 0;
+}
+.btn-ver-projetos-container-desk {
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.btn-ver-projetos-desk {
+
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 280px;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #0077ff;
+  border-radius: 12px;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(0, 119, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-ver-projetos-desk:hover {
+  background: rgba(0, 119, 255, 0.15);
+  transform: scale(1.03);
+}
+
+.btn-ver-projetos-icon-desk {
+  font-size: 1rem;
+}

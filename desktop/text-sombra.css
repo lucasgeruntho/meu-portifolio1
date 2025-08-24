@@ -1,3 +1,14 @@
+.sombra {
+  
+  height: 98%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
 
 
 :root {
@@ -9,7 +20,7 @@
 .primary-text-desktop {
   display: flex;
   width: 100%;
-  padding-top: 140px;
+  padding-top: 12%;
   justify-content: right;
   text-align: center;
   align-items: center;
@@ -31,8 +42,9 @@
 }
 
 
-.sombra {
-  top: 0;
-  z-index: -1;
-  background-size: cover;
-}
+
+
+
+
+
+

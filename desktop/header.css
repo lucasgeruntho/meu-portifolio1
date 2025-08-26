@@ -72,11 +72,11 @@
   color: #00aaff;
 }
 #social-popup {
-    display: none;
+  display: none;
 }
 
 .social-popup {
-  top: 80px; 
+ 
   --webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border: 1px solid #ffffff40;

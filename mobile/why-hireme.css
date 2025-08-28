@@ -63,12 +63,12 @@
 }
 
 .wave:nth-child(2) {
-  top: -50%;
-  animation-duration: 60s;
+  top: 72%;
+  animation-duration: 10s;
 }
 
 .wave:nth-child(3) {
-  top: 0;
+  top: 50px;
   animation-duration: 45s;
 }
 

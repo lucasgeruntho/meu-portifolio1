@@ -1,56 +1,43 @@
-/* ===== Estilos isolados do componente ===== */
-  .tech-marquee-desk {
-    --marquee-speed: 32s;        /* maior = mais lento */
-    --gap: 2.5rem;
-    --label-color: #EAF0FF;
-    position: relative;
+
+
+:root {
+  --color-azul-1: #00f;
+  --color-azul-2: #00007d;
+}
+
+
+.background-divisor-desktop {
+  background: linear-gradient(0deg, var(--color-azul-1), var(--color-azul-2));
+  padding: 20px 0;
+}
+
+
+
+.slider-desk {
     width: 100%;
     overflow: hidden;
+    background: transparent;
+    padding: 10px 0;
   }
-  .tech-marquee__desktop {
-    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 3rem, #000 calc(100% - 3rem), transparent);
-            mask-image: linear-gradient(90deg, transparent 0, #000 3rem, #000 calc(100% - 3rem), transparent);
-  }
-  .tech-marquee-desktop-segury{
-    display: inline-flex;
-    align-items: center;
-    gap: var(--gap);
-    padding: .75rem 1rem;
+  .slider-track-desk {
+    display: flex;
+    gap: 28px;
     white-space: nowrap;
     will-change: transform;
-    animation: tech-scroll var(--marquee-speed) linear infinite;
   }
-  /* Move exatamente metade da largura total (originais + clones) */
-  @keyframes tech-scroll {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-  }
-
-  .tech-item-desktop {
+  .item-desk {
+    animation: linear 300s;
     display: inline-flex;
     align-items: center;
-    gap: .6rem;
-    text-decoration: none;
-    color: var(--label-color);
-    font: 600 .95rem/1.1 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-    letter-spacing: .2px;
+    gap: 8px;
+    color: #fff;
+    border-radius: 12px;
+    font-family: sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
   }
-  .tech-item-desktop:focus-visible { outline: 2px solid #7aa2ff; outline-offset: 2px; border-radius: .5rem; }
-
-  .tech-icon-desktop { width: 28px; height: 28px; flex: 0 0 auto; border-radius: .35rem; }
-  .tech-label { white-space: nowrap; opacity: .95; }
-
-  /* Pausar no hover (opcional) */
-  .tech-marquee-marque:hover .tech-marquee__track { animation-play-state: paused; }
-
-  /* Itens clonados: não interagem e não são lidos por leitores de tela */
-  .tech-marquee-desktop .is-clone { pointer-events: none; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .tech-marquee__track { animation: none; }
-  }
-  @media (max-width: 480px) {
-    .tech-marquee { --gap: 1.4rem; }
-    .tech-icon { width: 24px; height: 24px; }
-    .tech-item { font-size: .9rem; }
+  .item-desk img,
+  .item-desk svg {
+    width: 22px;
+    height: 22px;
   }

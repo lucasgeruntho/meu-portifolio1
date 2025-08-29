@@ -11,3 +11,5 @@ VANTA.HALO({
   yOffset: -0.08,
   size: 2.90
 });
+
+

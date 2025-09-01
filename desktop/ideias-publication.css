@@ -108,12 +108,15 @@
 
 
 /* abertura do segundo grid de ideia e opções para clientes */
-
+.second-grid-final {
+  background-color: var(--background-fundo);
+}
 .ideias-second-desktop {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
+ 
   max-width: 1200px;
   opacity: 0;
   transform: translateY(50px);

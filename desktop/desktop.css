@@ -28,7 +28,7 @@ body {
   }
 
 @media (max-width:768px){
-  .custom-header, .desktop-svgs, .sombra, .img-divisor, .hire-section, .sombra__content {
+  .custom-header, .desktop-svgs, .sombra, .img-divisor, .hire-section, .sombra__content, .background-divisor-desktop, .publicacao-desktop, .second-grid-final {
     display: none;
   }
 }

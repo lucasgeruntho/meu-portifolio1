@@ -46,3 +46,34 @@ const observer = new IntersectionObserver((entries) => {
 boxes.forEach(box => observer.observe(box));
 
 
+
+// ====== Inicialização do Vanta HALO no background ======
+  (function () {
+    if (!window.VANTA || !window.VANTA.HALO) return;
+
+    var el = document.getElementById("vanta-hero");
+
+    // Evita inicializar duas vezes (caso de navegações PJAX, etc.)
+    if (el._vanta) { try { el._vanta.destroy(); } catch (e) {} }
+
+    el._vanta = VANTA.HALO({
+      el: el,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      amplitudeFactor: 3.00,
+      xOffset: -0.04,
+      yOffset: -0.02,
+      size: 3.00
+      // Você pode ajustar outras opções do HALO aqui se quiser
+    });
+
+    // Limpeza opcional caso o elemento seja removido
+    window.addEventListener("beforeunload", function () {
+      if (el && el._vanta) { try { el._vanta.destroy(); } catch (e) {} }
+    });
+  })();
+
+

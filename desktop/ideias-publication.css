@@ -15,10 +15,11 @@
 }
 
 .publicacao-desktop {
-  background: var(--background-fundo);
+  background: transparent;
+  margin: 0;
+  padding: 0;
 }
 .publicacao {
- 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,3 +194,95 @@
 .img-box-second-desktop:hover img {
   transform: scale(1.1);
 }
+
+
+
+
+ /* ====== Estilos isolados (scoped) ====== */
+  #vanta-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;        /* ocupa a tela toda */
+    overflow: hidden;         /* esconde o canvas extra do Vanta */
+  }
+
+  /* camada de conteúdo centralizado */
+  #vanta-hero .vh-content {
+    position: relative;
+    z-index: 1;               /* fica acima do canvas do Vanta */
+    min-height: 100vh;        /* deixa o conteúdo centralizado verticalmente */
+    max-width: min(92vw, 1100px);
+    margin: 0 auto;
+    padding: 6rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* centro vertical */
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  #vanta-hero .vh-title {
+    font-size: clamp(2.2rem, 6vw, 5rem);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #f0f3ff;
+    text-wrap: balance;
+  }
+
+  #vanta-hero .vh-sub {
+    max-width: 60ch;
+    font-size: clamp(1rem, 2.1vw, 1.25rem);
+    line-height: 1.6;
+    color: #cfd6ff;
+    opacity: .95;
+  }
+
+  #vanta-hero .vh-actions {
+    display: flex;
+    gap: .9rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+  }
+
+  #vanta-hero .vh-btn {
+    --ring: rgba(255,255,255,.35);
+    --shadow: rgba(0,0,0,.25);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .95rem 1.35rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+    box-shadow: 0 10px 24px -6px var(--shadow);
+    will-change: transform;
+    outline: none;
+  }
+  #vanta-hero .vh-btn:focus-visible {
+    box-shadow: 0 0 0 3px var(--ring), 0 10px 24px -6px var(--shadow);
+  }
+  #vanta-hero .vh-btn:hover { transform: translateY(-1px); }
+  #vanta-hero .vh-btn:active { transform: translateY(0); }
+
+  #vanta-hero .vh-primary {
+    color: #0b0f2e;
+    background: linear-gradient(180deg,#f8faff,#dfe7ff);
+  }
+  #vanta-hero .vh-ghost {
+    color: #f0f3ff;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(6px);
+  }
+
+  /* acessibilidade: reduz animações se preferido pelo usuário */
+  @media (prefers-reduced-motion: reduce) {
+    #vanta-hero .vh-btn { transition: none; }
+  }

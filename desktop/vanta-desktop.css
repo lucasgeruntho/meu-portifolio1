@@ -1,0 +1,107 @@
+.imagem-section-divider{
+    background:#0f17d6;
+  }
+  .imagem-section-divider img{
+    width:100%;
+  
+    display:block;
+    margin:0 auto;
+  }
+
+  .vanta-desktop-second-2{
+    position: relative;
+    isolation: isolate;
+    color: #fff;
+    padding: 40px 0;
+    background: #161ecf;
+    overflow: hidden;
+  }
+
+  .vanta-container-desktop{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 250px; /* mais espaço entre colunas e linhas */
+    align-items: start;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Cards */
+  .vanta-desktop-left{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .vanta-desktop-grid-second{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .18s ease;
+  }
+  .vanta-desktop-grid-second:hover{
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-2px);
+  }
+  .edsites-icon{
+    display:inline-flex;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    align-items:center;
+    justify-content:center;
+    background: rgba(0,0,0,0.18);
+    font-size: 14px;
+  }
+
+  
+
+  /* Coluna direita */
+  .edsites-right{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .edsites-title{
+    font-size: clamp(22px, 3vw, 34px);
+    margin:0;
+    line-height:1.2;
+  }
+  .edsites-desc{
+    font-size: clamp(13px, 1.5vw, 15px);
+    line-height: 1.5;
+    color: rgba(255,255,255,0.9);
+  }
+  .edsites-cta{
+    display:inline-block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    color:#fff;
+    text-decoration:none;
+    font-size: 14px;
+    font-weight:600;
+    transition: all .18s ease;
+  }
+  .edsites-cta:hover{
+    background: rgba(255,255,255,0.18);
+    border-color: rgba(255,255,255,0.35);
+  }
+
+  /* Responsivo */
+  @media (max-width: 900px){
+    .vanta-container-desktop{
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+  }

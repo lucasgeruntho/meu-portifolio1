@@ -1,15 +1,15 @@
-VANTA.HALO({
+VANTA.DOTS({
   el: ".sombra",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
-  minHeight: 560.00,   
-  minWidth: 200.00,    
-  backgroundColor: 0x22307c,
-  amplitudeFactor: 0.60,
-  xOffset: 0.01,
-  yOffset: -0.08,
-  size: 2.90
-});
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x15154a,
+  spacing: 37.00,
+  showLines: false
+})
 
 

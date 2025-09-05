@@ -16,7 +16,7 @@ body {
 
 /* ocultar e aparecer */
 .background-topo, .mobile-top-container, .primary-text-01, .btns-primary, .circulo, .ocultar-desktop, .img-corte-01, .insta-title, 
-.img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container, .slider, .insta-container, .incg-wrap, .mobile-menu
+.img-divisor-01, .opcoes, .landing-info, .strategy-box, .porque-me-contratar, .portfolio-container,  .slider, .insta-container, .incg-wrap, .mobile-menu
  {
   display: none;
 }
@@ -28,7 +28,7 @@ body {
   }
 
 @media (max-width:768px){
-  .custom-header, .desktop-svgs, .sombra, .img-divisor, .hire-section, .sombra__content, .background-divisor-desktop, .publicacao-desktop, .second-grid-final, #vanta-section {
+  .custom-header, .desktop-svgs, #vanta-desktop-second,.imagem-section-divider, .sombra, .img-divisor, .hire-section, .sombra__content, .background-divisor-desktop, .publicacao-desktop, .second-grid-final, #vanta-section {
     display: none;
   }
 }

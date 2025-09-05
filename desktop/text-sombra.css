@@ -1,20 +1,18 @@
 :root{
   --divisor-h: 70px; 
   --degrade-texto: #fff, #a8afba; --estilo: "stolzl-regular";
+--color-escuro:#03030e;
+--color-escuro-2:#07073c;
 }
 
 
 .sombra{
   position: relative;
   min-height: 100vh;    
+
   width: 100%;
   margin: 0;
-  background-color: transparent;
-  background-size: cover;
-  overflow: hidden;     
 }
-
-
 .sombra__content{
   position: relative;
   z-index: 2;

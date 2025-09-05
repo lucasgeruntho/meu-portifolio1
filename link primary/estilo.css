@@ -1,0 +1,80 @@
+:root{
+      /* tema escuro (padrão sempre) */
+      --bg:#0b0b0c;
+      --card:#141417;
+      --text:#e8e8ea;
+      --muted:#b5b5be;
+      --primary:#6ee7f0;
+      --btn:#1d1d22;
+      --btn-hover:#23232a;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:18px; --gap:14px; --link-height:56px;
+    }
+    /* tema claro quando .theme-light estiver no <html> */
+    :root.theme-light{
+      --bg:#fbfbfd; --card:#fff; --text:#101114; --muted:#4b4e57;
+      --primary:#4f46e5; --btn:#f3f4f6; --btn-hover:#eceef1;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:500 16px/1.4 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(110,231,240,.10), transparent 60%),
+        radial-gradient(900px 500px at 100% 10%, rgba(255,78,205,.08), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      display:grid; place-items:center;
+      padding:28px 18px 40px;
+    }
+    a{color:inherit; text-decoration:none}
+    img{display:block; max-width:100%}
+
+    .wrap{width:100%; max-width:760px; display:flex; align-items:center; justify-content:center}
+    .card{
+      width:min(680px,100%);
+      background: color-mix(in oklab, var(--card) 92%, transparent);
+      border:1px solid color-mix(in oklab, var(--text) 8%, transparent);
+      border-radius:18px; box-shadow:var(--shadow);
+      padding: clamp(22px, 4vw, 34px); text-align:center; backdrop-filter: blur(6px);
+    }
+    .avatar{--size:96px; width:var(--size); height:var(--size); margin:4px auto 16px; border-radius:50%; overflow:hidden;
+      border:2px solid color-mix(in oklab, var(--text) 16%, transparent); box-shadow:0 6px 20px rgba(0,0,0,.18)}
+    .name{font-size:clamp(22px,4.5vw,32px); margin:4px 0 6px; font-weight:800}
+    .bio{max-width:46ch; margin:0 auto 14px; color:var(--muted)}
+
+    .actions{display:flex; gap:10px; justify-content:center; margin-bottom:12px}
+    .btn{
+      height:38px; padding:0 14px; border-radius:999px; border:1px solid color-mix(in oklab, var(--text) 10%, transparent);
+      background:var(--btn); color:var(--text); display:inline-flex; align-items:center; gap:8px; font-weight:700; cursor:pointer;
+      transition:background .2s ease, transform .08s ease, border-color .2s ease;
+    }
+    .btn:hover{background:var(--btn-hover)}
+    .btn:active{transform:translateY(1px)}
+
+    .social{display:flex; gap:14px; justify-content:center; margin:16px 0 22px}
+    .social a{
+      width:44px; height:44px; display:grid; place-items:center; border-radius:14px;
+      background:var(--btn); border:1px solid color-mix(in oklab, var(--text) 8%, transparent);
+      transition:transform .15s ease, background .2s ease, border-color .2s ease;
+    }
+    .social a:hover{transform:translateY(-2px); background:var(--btn-hover); border-color:color-mix(in oklab, var(--text) 18%, transparent)}
+    .social svg{width:22px; height:22px}
+
+    .links{display:grid; gap:var(--gap); margin:8px 0 10px}
+    .link{
+      height:var(--link-height); border-radius:16px; display:flex; align-items:center; justify-content:center;
+      background:var(--btn); border:1px solid color-mix(in oklab, var(--text) 10%, transparent);
+      padding:0 18px; font-weight:700; letter-spacing:.2px; transition:transform .08s ease, border-color .2s ease, background .2s ease;
+    }
+    .link:hover{transform:translateY(-1px); background:var(--btn-hover); border-color:color-mix(in oklab, var(--text) 18%, transparent)}
+    
+
+    @media (min-width:720px){
+      .links{gap:16px}
+      .social a{width:48px; height:48px}
+      .link{height:64px; font-size:18px}
+    }
